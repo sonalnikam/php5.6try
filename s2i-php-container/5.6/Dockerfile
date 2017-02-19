@@ -10,6 +10,10 @@ PATH=$PATH:/opt/rh/rh-php56/root/usr/bin
 #-U # Update (or install if not present), usually preferred over -i 
 #-v # verbose
 #-h # hash, basically just shows a pretty progress bar
+#The Webtatic Yum repository is a CentOS/RHEL repository containing updated web-related packages. 
+#Its main goals are:to provide CentOS/RHEL administrators with the latest stable minor releases of web development/hosting software, which are not provided in CentOS/RHEL distribution minor releases.
+#to serve as an additional installation option for some of Webtatic’s projects.
+
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
