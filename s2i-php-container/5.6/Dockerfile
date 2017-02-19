@@ -5,6 +5,11 @@ MAINTAINER Milan Sulc <sulcmil@gmail.com>
 EXPOSE 8000
 ENV PHP_VERSION=5.6 \
 PATH=$PATH:/opt/rh/rh-php56/root/usr/bin
+
+#-i # Install, (will throw an error if already installed)
+#-U # Update (or install if not present), usually preferred over -i 
+#-v # verbose
+#-h # hash, basically just shows a pretty progress bar
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
