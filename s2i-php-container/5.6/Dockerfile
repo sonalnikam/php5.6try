@@ -1,6 +1,6 @@
 FROM centos/s2i-base-centos7
 
-
+#
 MAINTAINER Milan Sulc <sulcmil@gmail.com>
 EXPOSE 8000
 ENV PHP_VERSION=5.6 \
